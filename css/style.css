@@ -100,8 +100,8 @@ img {
   padding: 140px clamp(20px, 5vw, 72px) 76px;
   color: var(--white);
   background:
-    linear-gradient(90deg, rgba(0, 0, 0, 0.82), rgba(0, 0, 0, 0.26) 58%, rgba(0, 0, 0, 0.5)),
-    url("../images/bag1.jpeg") center / cover;
+    linear-gradient(90deg, rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0.2) 52%, rgba(0, 0, 0, 0.1)),
+    url("../images/hero.png") center / cover;
 }
 
 .hero__content {
