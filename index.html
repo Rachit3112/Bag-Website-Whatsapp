@@ -6,100 +6,237 @@
   <title>Noir Carry | Premium Bags</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <div class="announcement">
+    <span>New launch edit</span>
+    <strong>All bags at ₹999</strong>
+    <span>Order instantly on WhatsApp</span>
+  </div>
+
   <header class="site-header">
+    <button class="icon-button menu-toggle" type="button" aria-label="Open menu">☰</button>
     <a class="brand" href="#">Noir Carry</a>
     <nav class="nav" aria-label="Primary navigation">
-      <a href="#products">Collection</a>
+      <a href="#collections">Categories</a>
+      <a href="#products">Bestsellers</a>
+      <a href="#new-in">New In</a>
       <a href="#contact">Contact</a>
-      <a href="https://wa.me/917006239256?text=Hi%2C%20I%20want%20to%20order%20a%20bag.%20Please%20share%20availability.">WhatsApp</a>
     </nav>
+    <div class="header-actions">
+      <a class="header-link" href="https://wa.me/917006239256?text=Hi%2C%20I%20want%20to%20order%20a%20bag.%20Please%20share%20availability.">WhatsApp</a>
+      <button class="icon-button cart-toggle" type="button" aria-label="Open cart">Bag <span class="cart-count">0</span></button>
+    </div>
   </header>
+
+  <aside class="mobile-menu" aria-hidden="true">
+    <button class="mobile-menu__close" type="button" aria-label="Close menu">×</button>
+    <a href="#collections">Categories</a>
+    <a href="#products">Bestsellers</a>
+    <a href="#new-in">New In</a>
+    <a href="#spotlight">Spotlight</a>
+    <a href="#contact">Contact</a>
+  </aside>
 
   <main>
     <section class="hero">
       <div class="hero__content">
-        <p class="eyebrow">Premium handcrafted bags</p>
-        <h1>Quiet luxury for every journey.</h1>
-        <p class="hero__text">Discover clean silhouettes, refined finishes, and everyday pieces made to look effortless.</p>
-        <a class="button button--light" href="#products">Explore Collection</a>
+        <p class="eyebrow">Premium handbags for modern days</p>
+        <h1>Carry the moment.</h1>
+        <p class="hero__text">Clean silhouettes, rich textures, and statement pieces curated for work hours, weekends, and celebrations.</p>
+        <div class="hero__actions">
+          <a class="button button--light" href="#products">Shop Bestsellers</a>
+          <a class="button button--ghost" href="#collections">Explore Categories</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="service-strip" aria-label="Store benefits">
+      <div>
+        <strong>WhatsApp ordering</strong>
+        <span>Fast product confirmation</span>
+      </div>
+      <div>
+        <strong>Premium finish</strong>
+        <span>Selected everyday styles</span>
+      </div>
+      <div>
+        <strong>Local delivery</strong>
+        <span>Confirm availability before dispatch</span>
+      </div>
+    </section>
+
+    <section class="collections" id="collections">
+      <div class="section-heading">
+        <p class="eyebrow">Made for every moment</p>
+        <h2>Shop by mood</h2>
+      </div>
+      <div class="collection-grid">
+        <a class="collection-card" href="#products" data-filter-link="tote">
+          <img src="images/bag1.jpeg" alt="Tote bag collection">
+          <span>Tote Bags</span>
+        </a>
+        <a class="collection-card" href="#products" data-filter-link="shoulder">
+          <img src="images/bag2.jpeg" alt="Shoulder bag collection">
+          <span>Shoulder Bags</span>
+        </a>
+        <a class="collection-card" href="#products" data-filter-link="crossbody">
+          <img src="images/bag3.jpeg" alt="Crossbody bag collection">
+          <span>Crossbody Bags</span>
+        </a>
+        <a class="collection-card" href="#products" data-filter-link="handbag">
+          <img src="images/bag4.jpeg" alt="Handbag collection">
+          <span>Top Handle</span>
+        </a>
       </div>
     </section>
 
     <section class="products" id="products">
-      <div class="section-heading">
-        <p class="eyebrow">New arrivals</p>
+      <div class="section-heading section-heading--stacked">
+        <p class="eyebrow">Most-loved styles</p>
         <h2>Signature Collection</h2>
+        <div class="filter-tabs" aria-label="Product filters">
+          <button class="filter-tab is-active" type="button" data-filter="all">All</button>
+          <button class="filter-tab" type="button" data-filter="tote">Tote</button>
+          <button class="filter-tab" type="button" data-filter="shoulder">Shoulder</button>
+          <button class="filter-tab" type="button" data-filter="crossbody">Crossbody</button>
+          <button class="filter-tab" type="button" data-filter="handbag">Handbag</button>
+        </div>
       </div>
 
       <div class="product-grid">
-        <article class="product-card">
+        <article class="product-card" data-category="tote" data-name="Noir Classic Tote" data-price="999" data-image="images/bag1.jpeg">
+          <span class="badge">Best Seller</span>
           <button class="product-card__image" type="button" data-preview="images/bag1.jpeg" data-title="Noir Classic Tote" data-price="₹999" aria-label="Preview Noir Classic Tote">
             <img src="images/bag1.jpeg" alt="Noir Classic Tote bag">
           </button>
           <div class="product-card__body">
+            <p class="product-meta">Everyday Icon</p>
             <h3>Noir Classic Tote</h3>
-            <p class="price">₹999</p>
-            <a class="button" href="https://wa.me/917006239256?text=Hi%2C%20I%20want%20to%20order%20Noir%20Classic%20Tote%20priced%20at%20Rs%20999.%20Is%20it%20available%3F">Order on WhatsApp</a>
+            <div class="price-row"><span class="price">₹999</span><s>₹1,999</s><em>50% OFF</em></div>
+            <div class="product-actions">
+              <button class="button add-cart" type="button">Add to Bag</button>
+              <a class="button button--outline" href="https://wa.me/917006239256?text=Hi%2C%20I%20want%20to%20order%20Noir%20Classic%20Tote%20priced%20at%20Rs%20999.%20Is%20it%20available%3F">WhatsApp</a>
+            </div>
           </div>
         </article>
 
-        <article class="product-card">
+        <article class="product-card" data-category="shoulder" data-name="Monochrome Shoulder Bag" data-price="999" data-image="images/bag2.jpeg">
+          <span class="badge">New In</span>
           <button class="product-card__image" type="button" data-preview="images/bag2.jpeg" data-title="Monochrome Shoulder Bag" data-price="₹999" aria-label="Preview Monochrome Shoulder Bag">
             <img src="images/bag2.jpeg" alt="Monochrome Shoulder Bag">
           </button>
           <div class="product-card__body">
+            <p class="product-meta">Day to Night</p>
             <h3>Monochrome Shoulder Bag</h3>
-            <p class="price">₹999</p>
-            <a class="button" href="https://wa.me/917006239256?text=Hi%2C%20I%20want%20to%20order%20Monochrome%20Shoulder%20Bag%20priced%20at%20Rs%20999.%20Is%20it%20available%3F">Order on WhatsApp</a>
+            <div class="price-row"><span class="price">₹999</span><s>₹1,999</s><em>50% OFF</em></div>
+            <div class="product-actions">
+              <button class="button add-cart" type="button">Add to Bag</button>
+              <a class="button button--outline" href="https://wa.me/917006239256?text=Hi%2C%20I%20want%20to%20order%20Monochrome%20Shoulder%20Bag%20priced%20at%20Rs%20999.%20Is%20it%20available%3F">WhatsApp</a>
+            </div>
           </div>
         </article>
 
-        <article class="product-card">
+        <article class="product-card" data-category="crossbody" data-name="Luxe Mini Crossbody" data-price="999" data-image="images/bag3.jpeg">
+          <span class="badge">Limited</span>
           <button class="product-card__image" type="button" data-preview="images/bag3.jpeg" data-title="Luxe Mini Crossbody" data-price="₹999" aria-label="Preview Luxe Mini Crossbody">
             <img src="images/bag3.jpeg" alt="Luxe Mini Crossbody bag">
           </button>
           <div class="product-card__body">
+            <p class="product-meta">Hands Free</p>
             <h3>Luxe Mini Crossbody</h3>
-            <p class="price">₹999</p>
-            <a class="button" href="https://wa.me/917006239256?text=Hi%2C%20I%20want%20to%20order%20Luxe%20Mini%20Crossbody%20priced%20at%20Rs%20999.%20Is%20it%20available%3F">Order on WhatsApp</a>
+            <div class="price-row"><span class="price">₹999</span><s>₹1,999</s><em>50% OFF</em></div>
+            <div class="product-actions">
+              <button class="button add-cart" type="button">Add to Bag</button>
+              <a class="button button--outline" href="https://wa.me/917006239256?text=Hi%2C%20I%20want%20to%20order%20Luxe%20Mini%20Crossbody%20priced%20at%20Rs%20999.%20Is%20it%20available%3F">WhatsApp</a>
+            </div>
           </div>
         </article>
 
-        <article class="product-card">
+        <article class="product-card" data-category="handbag" data-name="Executive Handbag" data-price="999" data-image="images/bag4.jpeg">
+          <span class="badge">Work Edit</span>
           <button class="product-card__image" type="button" data-preview="images/bag4.jpeg" data-title="Executive Handbag" data-price="₹999" aria-label="Preview Executive Handbag">
             <img src="images/bag4.jpeg" alt="Executive Handbag">
           </button>
           <div class="product-card__body">
+            <p class="product-meta">Desk Drop</p>
             <h3>Executive Handbag</h3>
-            <p class="price">₹999</p>
-            <a class="button" href="https://wa.me/917006239256?text=Hi%2C%20I%20want%20to%20order%20Executive%20Handbag%20priced%20at%20Rs%20999.%20Is%20it%20available%3F">Order on WhatsApp</a>
+            <div class="price-row"><span class="price">₹999</span><s>₹1,999</s><em>50% OFF</em></div>
+            <div class="product-actions">
+              <button class="button add-cart" type="button">Add to Bag</button>
+              <a class="button button--outline" href="https://wa.me/917006239256?text=Hi%2C%20I%20want%20to%20order%20Executive%20Handbag%20priced%20at%20Rs%20999.%20Is%20it%20available%3F">WhatsApp</a>
+            </div>
           </div>
         </article>
 
-        <article class="product-card">
+        <article class="product-card" data-category="crossbody" data-name="Urban Sling Bag" data-price="999" data-image="images/bag5.jpeg">
+          <span class="badge">Fresh Hue</span>
           <button class="product-card__image" type="button" data-preview="images/bag5.jpeg" data-title="Urban Sling Bag" data-price="₹999" aria-label="Preview Urban Sling Bag">
             <img src="images/bag5.jpeg" alt="Urban Sling Bag">
           </button>
           <div class="product-card__body">
+            <p class="product-meta">Carry-On</p>
             <h3>Urban Sling Bag</h3>
-            <p class="price">₹999</p>
-            <a class="button" href="https://wa.me/917006239256?text=Hi%2C%20I%20want%20to%20order%20Urban%20Sling%20Bag%20priced%20at%20Rs%20999.%20Is%20it%20available%3F">Order on WhatsApp</a>
+            <div class="price-row"><span class="price">₹999</span><s>₹1,999</s><em>50% OFF</em></div>
+            <div class="product-actions">
+              <button class="button add-cart" type="button">Add to Bag</button>
+              <a class="button button--outline" href="https://wa.me/917006239256?text=Hi%2C%20I%20want%20to%20order%20Urban%20Sling%20Bag%20priced%20at%20Rs%20999.%20Is%20it%20available%3F">WhatsApp</a>
+            </div>
           </div>
         </article>
 
-        <article class="product-card">
+        <article class="product-card" data-category="tote" data-name="Heritage Work Bag" data-price="999" data-image="images/bag6.jpeg">
+          <span class="badge">Office Pick</span>
           <button class="product-card__image" type="button" data-preview="images/bag6.jpeg" data-title="Heritage Work Bag" data-price="₹999" aria-label="Preview Heritage Work Bag">
             <img src="images/bag6.jpeg" alt="Heritage Work Bag">
           </button>
           <div class="product-card__body">
+            <p class="product-meta">Structured Essential</p>
             <h3>Heritage Work Bag</h3>
-            <p class="price">₹999</p>
-            <a class="button" href="https://wa.me/917006239256?text=Hi%2C%20I%20want%20to%20order%20Heritage%20Work%20Bag%20priced%20at%20Rs%20999.%20Is%20it%20available%3F">Order on WhatsApp</a>
+            <div class="price-row"><span class="price">₹999</span><s>₹1,999</s><em>50% OFF</em></div>
+            <div class="product-actions">
+              <button class="button add-cart" type="button">Add to Bag</button>
+              <a class="button button--outline" href="https://wa.me/917006239256?text=Hi%2C%20I%20want%20to%20order%20Heritage%20Work%20Bag%20priced%20at%20Rs%20999.%20Is%20it%20available%3F">WhatsApp</a>
+            </div>
           </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="editorial" id="new-in">
+      <div class="editorial__image">
+        <img src="images/hero.png" alt="Premium floral handbag">
+      </div>
+      <div class="editorial__content">
+        <p class="eyebrow">New in</p>
+        <h2>Got your back from desk to dinner.</h2>
+        <p>Build a capsule of statement bags that keeps your look polished without overthinking it.</p>
+        <a class="button" href="#products">Shop New Styles</a>
+      </div>
+    </section>
+
+    <section class="spotlight" id="spotlight">
+      <div class="section-heading">
+        <p class="eyebrow">In the spotlight</p>
+        <h2>Why customers pick us</h2>
+      </div>
+      <div class="spotlight-grid">
+        <article>
+          <span>01</span>
+          <h3>Curated silhouettes</h3>
+          <p>Styles selected for everyday outfits, work looks, and event dressing.</p>
+        </article>
+        <article>
+          <span>02</span>
+          <h3>Easy WhatsApp order</h3>
+          <p>Tap a product, confirm availability, and place your order directly.</p>
+        </article>
+        <article>
+          <span>03</span>
+          <h3>Premium presentation</h3>
+          <p>A clean catalog experience that makes every product easier to browse.</p>
         </article>
       </div>
     </section>
@@ -107,7 +244,7 @@
     <section class="contact" id="contact">
       <div class="contact__inner">
         <p class="eyebrow">Private orders</p>
-        <h2>Find your perfect bag.</h2>
+        <h2>Need help choosing?</h2>
         <p>Message us on WhatsApp for product details, availability, custom requests, and quick ordering.</p>
         <a class="button button--light" href="https://wa.me/917006239256?text=Hi%2C%20I%20want%20to%20order%20a%20bag.%20Please%20share%20availability.">Chat on WhatsApp</a>
       </div>
@@ -120,15 +257,38 @@
       <button class="preview-modal__close" type="button" data-close-preview aria-label="Close preview">×</button>
       <img class="preview-modal__image" src="" alt="">
       <div class="preview-modal__details">
+        <p class="eyebrow">Quick View</p>
         <h2 id="previewTitle"></h2>
         <p id="previewPrice"></p>
+        <span>Zipper closure · Premium finish · Ready to order</span>
       </div>
     </div>
   </div>
 
+  <aside class="cart-drawer" aria-hidden="true">
+    <div class="cart-drawer__header">
+      <h2>Your Bag</h2>
+      <button class="cart-close" type="button" aria-label="Close cart">×</button>
+    </div>
+    <div class="cart-items"></div>
+    <div class="cart-empty">Your bag is empty. Add a product to order on WhatsApp.</div>
+    <div class="cart-drawer__footer">
+      <div class="cart-total"><span>Total</span><strong>₹0</strong></div>
+      <a class="button cart-whatsapp" href="https://wa.me/917006239256?text=Hi%2C%20I%20want%20to%20order%20a%20bag.%20Please%20share%20availability.">Checkout on WhatsApp</a>
+    </div>
+  </aside>
+  <div class="page-overlay"></div>
+
   <footer class="footer">
-    <p>Noir Carry</p>
-    <span>Premium bags crafted for modern living.</span>
+    <div>
+      <p>Noir Carry</p>
+      <span>Premium bags crafted for modern living.</span>
+    </div>
+    <div class="footer-links">
+      <a href="#collections">Categories</a>
+      <a href="#products">Bestsellers</a>
+      <a href="#contact">Support</a>
+    </div>
   </footer>
 
   <script>
@@ -138,6 +298,18 @@
     const previewPrice = previewModal.querySelector("#previewPrice");
     const previewButtons = document.querySelectorAll(".product-card__image");
     const closeButtons = document.querySelectorAll("[data-close-preview]");
+    const filterTabs = document.querySelectorAll(".filter-tab");
+    const productCards = document.querySelectorAll(".product-card");
+    const collectionLinks = document.querySelectorAll("[data-filter-link]");
+    const cartDrawer = document.querySelector(".cart-drawer");
+    const cartItems = document.querySelector(".cart-items");
+    const cartEmpty = document.querySelector(".cart-empty");
+    const cartCount = document.querySelector(".cart-count");
+    const cartTotal = document.querySelector(".cart-total strong");
+    const cartWhatsapp = document.querySelector(".cart-whatsapp");
+    const pageOverlay = document.querySelector(".page-overlay");
+    const mobileMenu = document.querySelector(".mobile-menu");
+    const cart = [];
 
     function openPreview(button) {
       previewImage.src = button.dataset.preview;
@@ -156,17 +328,110 @@
       previewImage.src = "";
     }
 
-    previewButtons.forEach((button) => {
-      button.addEventListener("click", () => openPreview(button));
+    function applyFilter(filter) {
+      filterTabs.forEach((tab) => tab.classList.toggle("is-active", tab.dataset.filter === filter));
+      productCards.forEach((card) => {
+        card.hidden = filter !== "all" && card.dataset.category !== filter;
+      });
+    }
+
+    function openCart() {
+      cartDrawer.classList.add("is-open");
+      pageOverlay.classList.add("is-open");
+      cartDrawer.setAttribute("aria-hidden", "false");
+    }
+
+    function closeCart() {
+      cartDrawer.classList.remove("is-open");
+      pageOverlay.classList.remove("is-open");
+      cartDrawer.setAttribute("aria-hidden", "true");
+    }
+
+    function openMenu() {
+      mobileMenu.classList.add("is-open");
+      pageOverlay.classList.add("is-open");
+      mobileMenu.setAttribute("aria-hidden", "false");
+    }
+
+    function closeMenu() {
+      mobileMenu.classList.remove("is-open");
+      pageOverlay.classList.remove("is-open");
+      mobileMenu.setAttribute("aria-hidden", "true");
+    }
+
+    function renderCart() {
+      cartItems.innerHTML = "";
+      cart.forEach((item, index) => {
+        const row = document.createElement("div");
+        row.className = "cart-item";
+        row.innerHTML = `
+          <img src="${item.image}" alt="${item.name}">
+          <div>
+            <strong>${item.name}</strong>
+            <span>₹${item.price}</span>
+          </div>
+          <button type="button" aria-label="Remove ${item.name}" data-remove="${index}">×</button>
+        `;
+        cartItems.appendChild(row);
+      });
+
+      const total = cart.reduce((sum, item) => sum + Number(item.price), 0);
+      cartCount.textContent = cart.length;
+      cartTotal.textContent = `₹${total}`;
+      cartEmpty.hidden = cart.length > 0;
+      cartWhatsapp.href = buildWhatsAppLink();
+    }
+
+    function buildWhatsAppLink() {
+      if (!cart.length) {
+        return "https://wa.me/917006239256?text=Hi%2C%20I%20want%20to%20order%20a%20bag.%20Please%20share%20availability.";
+      }
+      const items = cart.map((item) => `${item.name} - Rs ${item.price}`).join(", ");
+      const total = cart.reduce((sum, item) => sum + Number(item.price), 0);
+      return `https://wa.me/917006239256?text=${encodeURIComponent(`Hi, I want to order: ${items}. Total Rs ${total}. Is it available?`)}`;
+    }
+
+    previewButtons.forEach((button) => button.addEventListener("click", () => openPreview(button)));
+    closeButtons.forEach((button) => button.addEventListener("click", closePreview));
+    filterTabs.forEach((tab) => tab.addEventListener("click", () => applyFilter(tab.dataset.filter)));
+    collectionLinks.forEach((link) => link.addEventListener("click", () => applyFilter(link.dataset.filterLink)));
+
+    document.querySelectorAll(".add-cart").forEach((button) => {
+      button.addEventListener("click", () => {
+        const card = button.closest(".product-card");
+        cart.push({
+          name: card.dataset.name,
+          price: card.dataset.price,
+          image: card.dataset.image
+        });
+        renderCart();
+        openCart();
+      });
     });
 
-    closeButtons.forEach((button) => {
-      button.addEventListener("click", closePreview);
+    cartItems.addEventListener("click", (event) => {
+      const removeButton = event.target.closest("[data-remove]");
+      if (!removeButton) return;
+      cart.splice(Number(removeButton.dataset.remove), 1);
+      renderCart();
     });
+
+    document.querySelector(".cart-toggle").addEventListener("click", openCart);
+    document.querySelector(".cart-close").addEventListener("click", closeCart);
+    document.querySelector(".menu-toggle").addEventListener("click", openMenu);
+    document.querySelector(".mobile-menu__close").addEventListener("click", closeMenu);
+    pageOverlay.addEventListener("click", () => {
+      closeCart();
+      closeMenu();
+    });
+
+    mobileMenu.querySelectorAll("a").forEach((link) => link.addEventListener("click", closeMenu));
 
     document.addEventListener("keydown", (event) => {
-      if (event.key === "Escape" && previewModal.classList.contains("is-open")) {
+      if (event.key === "Escape") {
         closePreview();
+        closeCart();
+        closeMenu();
       }
     });
   </script>
