@@ -181,7 +181,7 @@ img {
   color: var(--white);
   background:
     linear-gradient(90deg, rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0.28) 48%, rgba(0, 0, 0, 0.05)),
-    url("../images/hero.png") center / cover;
+    url("../images/hero/hero.png") center / cover;
 }
 
 .hero__content {
